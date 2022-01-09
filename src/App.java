@@ -1,38 +1,40 @@
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.Random;
+
 
 public class App {
-    static ArrayList<Integer> list = new ArrayList<>();
-    static Boolean cycle = true;
+    
+    static void getArray(int my_array[]){
+        Random random = new Random();
 
-    static void getInput(){
-        System.out.println("\n*** Enter your list ***" + "\n" +
-                           "For close the input enter '001' \n");
+        System.out.println("\n*** Creating your Array ***");
 
-        Scanner console = new Scanner(System.in);
-        int input=0; // This variable we use in the conditional 
-        do{
-            System.out.print("Enter a number: ");
-            input = console.nextInt();
-            if(input!=001)
-                list.add(input);
-            else
-                cycle=false; // Break cycle
-        }while(cycle);
-            System.out.println("\nLeaving the scanner :D");
-        console.close();
+        for (int i=0;i<10;i++){
+            my_array[i] = random.nextInt(10000);
+        }
+
+
+        System.out.println("Array Complete :D");
     }
 
-    static void printList(){
+    static void printList(int my_array[]){
         System.out.println("*** Printing List ***");
-        System.out.println(list);
+        System.out.print("[ ");
+        for (int i : my_array) {
+            System.out.print(i + ", ");
+        }
+        System.out.print("]\n");
     }
     public static void main(String[] args) throws Exception {
+        final int noElements = 10;
+        int[] my_array = new int[noElements];
+        
         System.out.println("*** QuickSort Parallel Algorithm ***"); // Tittle of Program
-        getInput();
+        getArray(my_array);
         System.out.println("\nBefore Sorting");
-        printList();
+        printList(my_array);
+        
         System.out.println("\nSorting.....");
         
+
     }
 }
