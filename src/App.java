@@ -1,6 +1,5 @@
 import java.util.Random;
 
-
 public class App {
     
     static void getArray(int my_array[]){
