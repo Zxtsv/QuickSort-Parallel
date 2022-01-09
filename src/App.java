@@ -19,10 +19,20 @@ public class App {
             else
                 cycle=false; // Break cycle
         }while(cycle);
+            System.out.println("\nLeaving the scanner :D");
         console.close();
+    }
+
+    static void printList(){
+        System.out.println("*** Printing List ***");
+        System.out.println(list);
     }
     public static void main(String[] args) throws Exception {
         System.out.println("*** QuickSort Parallel Algorithm ***"); // Tittle of Program
         getInput();
+        System.out.println("\nBefore Sorting");
+        printList();
+        System.out.println("\nSorting.....");
+        
     }
 }
