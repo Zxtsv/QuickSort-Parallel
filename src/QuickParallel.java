@@ -1,6 +1,6 @@
 
 
-public class QuickParralell implements Runnable {
+public class QuickParallel implements Runnable {
     
 
     public void run() {
