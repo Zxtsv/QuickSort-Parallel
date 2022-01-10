@@ -17,7 +17,7 @@ public class MyFirstRunnable implements Runnable {
 
     @Override
     public void run() {
-        QuickParallel sort = new QuickParallel();
+        //QuickParallel sort = new QuickParallel();
         try {
             QuickParallel.quickSort(arr, l, r);
         } catch (InterruptedException ex) {
