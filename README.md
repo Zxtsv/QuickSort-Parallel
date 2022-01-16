@@ -55,7 +55,7 @@ _After, the program sort the array and print it._
 
 ## Autors ✒️
 
-* **Bernardo Pérez** - *QuickSort Code* - [bernardopprz](https://github.com/bernardopprz)
+* **Zxtsv** - *QuickSort Code* - [Zxtsv](https://github.com/Zxtsv)
 
-⌨️ w/ ❤️ by [Bernardo](https://github.com/bernardopprz) 😊
+⌨️ w/ ❤️ by [Zxtsv](https://github.com/Zxtsv) 😊
 
